@@ -216,12 +216,3 @@ const edt = {
         }
     ]
 };
-
-/*
-#fff0e6 → pêche pastel
-#d4fdec → vert menthe très doux
-#f0e8ff → lavande pastel
-#fff5f5 → rose très léger
-#c8fff1 → vert aqua doux
-#e6f0ff → bleu ciel pâle
-*/

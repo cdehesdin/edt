@@ -31,12 +31,13 @@ body {
     display: flex;
     flex-direction: column;
     padding: 7px 10px 10px;
+    font-weight: 300;
 }
 
 .x-title {
     align-self: center;
     font-weight: 700;
-    margin-bottom: 11px;
+    margin-bottom: 15px;
 }
 
 .x-edt {
