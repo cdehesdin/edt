@@ -22,7 +22,7 @@ const edt = {
                     "fin": "11:00",
                     "info1": "MOREAU C.",
                     "info2": "Salle 206",
-                    "background-color": "#b8fec9"
+                    "background-color": "#fff5f5"
                 },
                 {
                     "nom": "Mathématiques",
@@ -75,7 +75,7 @@ const edt = {
                     "fin": "11:00",
                     "info1": "MOREAU C.",
                     "info2": "Salle 206",
-                    "background-color": "#b8fec9"
+                    "background-color": "#fff5f5"
                 },
                 {
                     "nom": "Français",
@@ -99,7 +99,7 @@ const edt = {
                     "fin": "17:30",
                     "info1": "MOREAU C.",
                     "info2": "Salle 206",
-                    "background-color": "#b8fec9"
+                    "background-color": "#fff5f5"
                 },
                 {
                     "nom": "Anglais LV1",
