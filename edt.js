@@ -102,6 +102,14 @@ const edt = {
                     "background-color": "#fff5f5"
                 },
                 {
+                    "nom": "Musique",
+                    "debut": "15:30",
+                    "fin": "16:30",
+                    "info1": "VERNET M.",
+                    "info2": "Salle de musique",
+                    "background-color": "#f0e8ff"
+                },
+                {
                     "nom": "Anglais LV1",
                     "debut": "14:30",
                     "fin": "15:30",
@@ -109,6 +117,14 @@ const edt = {
                     "info2": "Salle 103",
                     "background-color": "#d4fdec"
                 },
+                {
+                    "nom": "Latin",
+                    "debut": "17:00",
+                    "fin": "18:00",
+                    "info1": "DUPAS M.",
+                    "info2": "Salle 101",
+                    "background-color": "#e6f0ff"
+                }
             ]
         },
         {

@@ -1,26 +1,6 @@
-/**************************************************/
-/*                      COLORS                    */
-/**************************************************/
-@media (prefers-color-scheme: light) {
-    :root {
-        --background-color: #fff;
-        --color: #232425;
-    }
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background-color: #232425;
-        --color: #fff;
-    }
-}
-
-
-/**************************************************/
-/*                      STYLE                     */
-/**************************************************/
 html, body {
-    color: var(--color);
-    background-color: var(--background-color);
+    color: #232425;
+    background-color: #fff;
     height: 100%;
     margin: 0;
     padding: 0;
