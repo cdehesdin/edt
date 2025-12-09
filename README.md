@@ -19,34 +19,38 @@ Le fichier `edt.js` contient la constante JSON qui structure l'emploi du temps. 
 
 ```javascript
 const edt = {
-  titre: "Mon Emploi du Temps",
-  heureDebut: "08:00",
-  heureFin: "18:00",
-  jours: [
-    {
-      nom: "Lundi",
-      creneaux: [
+    "titre": "Emploi du temps (démonstration)",
+    "horaires": {
+        "debut": "08:00",
+        "fin": "18:00"
+    },
+    "jours": [
         {
-          nom: "Mathématiques",
-          debut: "08:00",
-          fin: "09:30",
-          info1: "M. Dupont",
-          info2: "Salle 101"
+            "nomJour": "Lundi",
+            "creneaux": [
+                {
+                    "nom": "Français",
+                    "debut": "09:00",
+                    "fin": "10:00",
+                    "info1": "GALLET B.",
+                    "info2": "Salle 105",
+                    "background-color": "#ffe9e9"
+                },
+                {
+                    "nom": "Histoire-Géographie",
+                    "debut": "10:00",
+                    "fin": "11:00",
+                    "info1": "MOREAU C.",
+                    "info2": "Salle 206",
+                    "background-color": "#fff5f5"
+                }
+            ]
         },
         {
-          nom: "Physique",
-          debut: "09:45",
-          fin: "11:15",
-          info1: "Mme Martin",
-          info2: "Salle 102"
-        }
-      ]
-    },
-    {
-      nom: "Mardi",
-      creneaux: []
-    }
-  ]
+            "nomJour": "Mardi",
+            "creneaux": []
+        },
+    ]
 };
 ```
 
