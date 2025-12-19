@@ -9,7 +9,7 @@ Développement d'un outil de génération d'**emploi du temps** personnalisable 
 
 L'emploi du temps peut être entièrement personnalisé : le titre, l'horaire de début et de fin de journée peuvent être modifiés.
 
-Il est possible d'ajouter autant de jours que nécessaire, et pour chacun de ces jours, créer des créneaux horaires où l'on peut définir le nom de l'activité, l'heure de début et de fin, ainsi que deux informations supplémentaires comme le nom du professeur et le numéro de salle. Si des créneaux se chevauchent (par exemple, deux activités programmées sur la même plage horaire), l'outil les affiche de manière optimisée.
+Il est possible d'ajouter autant de jours que nécessaire, et pour chacun de ces jours, créer des créneaux horaires où l'on peut définir le nom de l'activité, l'heure de début et de fin à la minute près, ainsi que deux informations supplémentaires comme le nom du professeur et le numéro de salle. Si des créneaux se chevauchent (par exemple, deux activités programmées sur la même plage horaire), l'outil les affiche de manière optimisée.
 
 L'emploi du temps peut être imprimé facilement en format portrait ou paysage en utilisant `Ctrl+P` sous Windows/Linux ou `Cmd+P` sur macOS, selon le système d'exploitation.
 
