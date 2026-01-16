@@ -5,12 +5,15 @@ class Creneau {
     constructor(data) {
         this.data = data;
     }
+
     debut() {
         return this.data.debut;
     }
+
     fin() {
         return this.data.fin;
     }
+
     toMin(h) {
         return h.split(":").map(Number).reduce((h, m) => h * 60 + m);
     }
@@ -26,6 +29,7 @@ class Noeud {
         this.gauche = this.droite = null;
         this.creneaux = [];
     }
+    
     insert(c) {
         this.creneaux.push(c);
     }
@@ -113,26 +117,29 @@ function afficherJour(jour, divJour, debut = "08:00", fin = "18:00") {
 
     items.forEach(r => {
         const d = r.creneau.data;
-        const start = toMin(d.debut) - toMin(debut);
-        const dur = toMin(d.fin) - toMin(d.debut);
-        const w = 100 / r.diviseur;
-        const left = w * r.index;
 
-        const b = document.createElement("div");
-        b.className = "x-creneau";
-        b.style.top = `calc(21px + (${pxHour} / 60 * ${start}))`;
-        b.style.height = `calc(${pxHour} / 60 * ${dur})`;
-        b.style.left = `${left}%`;
-        b.style.width = `${w}%`;
+        if (d.debut >= debut && d.fin <= fin) {
+            const start = toMin(d.debut) - toMin(debut);
+            const dur = toMin(d.fin) - toMin(d.debut);
+            const w = 100 / r.diviseur;
+            const left = w * r.index;
 
-        if (d.backgroundColor) b.style.backgroundColor = d.backgroundColor;
+            const b = document.createElement("div");
+            b.className = "x-creneau";
+            b.style.top = `calc(21px + (${pxHour} / 60 * ${start}))`;
+            b.style.height = `calc(${pxHour} / 60 * ${dur})`;
+            b.style.left = `${left}%`;
+            b.style.width = `${w}%`;
 
-        b.innerHTML = `
-            <div>${d.nom}</div>
-            <div>${d.info1}</div>
-            <div>${d.info2}</div>
-        `;
-        divJour.appendChild(b);
+            if (d.backgroundColor) b.style.backgroundColor = d.backgroundColor;
+
+            b.innerHTML = `
+                <div>${d.nom}</div>
+                <div>${d.info1}</div>
+                <div>${d.info2}</div>
+            `;
+            divJour.appendChild(b);
+        }
     });
 }
 
